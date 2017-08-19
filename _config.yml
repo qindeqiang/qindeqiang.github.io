@@ -1,6 +1,6 @@
-name: Twister
-description: a powerful jekyll theme
-url: #place url
+name: 一路
+description: 记录所有的有关于工作领悟
+url: http://qindeqiang.github.io/
 baseurl: #place folder name if site is served in subfolder
 permalink: /:title/
 paginate: 8
@@ -16,7 +16,6 @@ pinterest: "#"
 instagram: "#"
 twitter: "#"
 facebook: "#"
-youtube: "#"
 vimeo: "#"
 soundcloud: "#"
 
@@ -117,4 +116,5 @@ prose:
           label: "YouTube Video ID"
           help: "Set post type to youtube in order for this to work. Do not set featured image, as the youtube video thumbnail will be used"
           type: "text"
+
 

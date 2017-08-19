@@ -1,10 +1,9 @@
 ---
-author: qindeqiang
+author: Deqiang Qin
 title: Ubuntu下离线安装CDH
-featimg: 1.jpg
-tags: [text]
-category: [standard]
+featimg: 4.jpg
 ---
+
 ## 裸机离线安装CDH
 
 ### 操作系统准备工作
@@ -74,7 +73,7 @@ grant all on cmf.* to 'cmf'@'%' identified by 'cmfpassword';
 
 #sql end
 ```
-![](/img/2.jpg "Optional title")
+
 #### manager节点安装
 
 ```shell
