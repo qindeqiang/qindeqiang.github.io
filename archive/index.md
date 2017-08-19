@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Archive
+title: Archives
 ---
 ## by Month
 {% include monthly_archive.html %}
