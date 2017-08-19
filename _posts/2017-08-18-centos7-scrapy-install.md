@@ -1,7 +1,7 @@
 ---
 author: Deqiang Qin
 title: CentOS7下Scrapy的安装流程
-featimg: scrapy_logo.jpg
+featimg: 2.jpg
 category: [standard]
 ---
 
