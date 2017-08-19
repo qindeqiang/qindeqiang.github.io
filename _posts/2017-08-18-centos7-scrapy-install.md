@@ -1,4 +1,3 @@
-
 ---
 author: Deqiang Qin
 title: CentOS7下Scrapy的安装流程
