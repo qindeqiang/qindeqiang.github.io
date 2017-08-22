@@ -1,16 +1,16 @@
 # Site settings
-title: Clean Blog
+title: 大数据资源
 header-img: img/home-bg.jpg
-email: your-email@yourdomain.com
-copyright_name: Your/Project/Corporate Name
-description: "Write your site description here. It will be used as your sites meta description as well!"
+email: qindeqiang1@163.com
+copyright_name: 个人组织
+description: "收集大数据及AI相关的资源，包含但不限于博文（翻译，原创，转载），数据资源，软件下载，优秀站点论坛公众号推荐"
 #baseurl: "/startbootstrap-clean-blog-jekyll"
 baseurl: ""
-url: "http://yourdomain.com"
-twitter_username: SBootstrap
-github_username:  davidtmiller
-facebook_username:  StartBootstrap
-email_username:  your-email@yourdomain.com
+url: "http://qindeqiang.github.com"
+#twitter_username: SBootstrap
+#github_username:  davidtmiller
+#facebook_username:  StartBootstrap
+#email_username:  your-email@yourdomain.com
 
 # Google Analytics
 # To enable google analytics, uncomment below line with a valid Google Tracking ID
