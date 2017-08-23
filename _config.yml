@@ -1,8 +1,8 @@
 # Site settings
-title: 大数据资源
+title: 大数资源
 header-img: img/home-bg.jpg
 email: qindeqiang1@163.com
-copyright_name: 个人组织
+copyright_name: Big Data Resource
 description: "收集大数据及AI相关的资源，包含但不限于博文（翻译，原创，转载），数据资源，软件下载，优秀站点论坛公众号推荐"
 #baseurl: "/startbootstrap-clean-blog-jekyll"
 baseurl: ""
@@ -11,7 +11,7 @@ url: "http://qindeqiang.github.com"
 #github_username:  davidtmiller
 #facebook_username:  StartBootstrap
 #email_username:  your-email@yourdomain.com
-
+weibo_username: qindeqiang
 # Google Analytics
 # To enable google analytics, uncomment below line with a valid Google Tracking ID
 # google_tracking_id:
@@ -24,3 +24,8 @@ paginate: 5
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 
 gems: [jekyll-paginate, jekyll-feed]
+
+# Sidebar settings
+sidebar: true
+sidebar-about-description: "Code and Write blog"
+sidebar-avatar: /img/3.jpg 
