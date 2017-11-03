@@ -1,21 +1,21 @@
 # Site settings
-title: Hux Blog
-SEOTitle: 黄玄的博客 | Hux Blog
+title: Bigdata Resource
+SEOTitle: Bigdata Resource | Bigdata Resource
 header-img: img/home-bg.jpg
-email: huxpro@gmail.com
-description: "关于前端与设计、黑客与画家 | 黄玄，Web & Mobile Lover，Software Engineer，UX Designer | 这里是 @Hux黄玄 的个人博客，与你一起发现更大的世界。"
-keyword: "黄玄, Hux黄玄, Hux, 鬼栈, huxpro, @huxpro, 黄玄的博客, Hux Blog, 博客, 个人网站, 互联网, Web, JavaScript, 前端, 设计"
-url: "https://huangxuan.me"              # your host, for absolute URL
+email: deqiangqin@gmail.com
+description: "About bigdata resource,such as news,blogs,datas,codes,public project.Most of posts is my experience."
+keyword: "bigdata,nifi,hbase,elasticsearch,kafka,centos"
+url: "http://bigdataresource.site"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 
 # SNS settings
 RSS: false
-weibo_username:     huxpro
-zhihu_username:     huxpro
-github_username:    huxpro
-twitter_username:   huxpro
+weibo_username:     
+zhihu_username:     
+github_username:    qindeqiang
+twitter_username:   
 #facebook_username:  huxpro
 # linkedin_username:  firstname-lastname-idxxxx
 
@@ -67,8 +67,8 @@ ga_domain: huangxuan.me
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "写写代码，做做设计，<br>离开世界之前，一切都是过程"
-sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-about-description: "编代码，做架构，写博客；"
+sidebar-avatar: /img/qdq.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
@@ -87,9 +87,6 @@ service-worker: true
 # Friends
 friends: [
     {
-    #     title: "Su",
-    #     href: "http://su.gallery/"
-    # },{
         title: "乱序",
         href: "http://mida.re/"
     },{
