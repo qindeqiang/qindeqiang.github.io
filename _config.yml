@@ -1,16 +1,16 @@
 # Site settings
-title: 大数资源
+title: Bigdata Resource
+SEOTitle: Bigdata Resource | Bigdata Resource
 header-img: img/home-bg.jpg
-email: qindeqiang1@163.com
-copyright_name: Big Data Resource
-description: "收集大数据及AI相关的资源，包含但不限于博文（翻译，原创，转载），数据资源，软件下载，优秀站点论坛公众号推荐"
-#baseurl: "/startbootstrap-clean-blog-jekyll"
+email: deqiangqin@gmail.com
+copyright_name: Bigdata Resource
+description: "About bigdata resource,such as news,blogs,datas,codes,public project.Most of posts is my experience."
 baseurl: ""
-url: "http://qindeqiang.github.com"
+url: "http://bigdataresource.site"
+
 #twitter_username: SBootstrap
 #github_username:  davidtmiller
 #facebook_username:  StartBootstrap
-#email_username:  your-email@yourdomain.com
 weibo_username: qindeqiang
 # Google Analytics
 # To enable google analytics, uncomment below line with a valid Google Tracking ID

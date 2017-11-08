@@ -2,6 +2,7 @@
 author: Deqiang Qin
 title:  POM文件详解
 featimg: pom.jpg
+published: false
 ---
 
 
