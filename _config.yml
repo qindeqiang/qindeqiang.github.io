@@ -29,3 +29,5 @@ gems: [jekyll-paginate, jekyll-feed]
 sidebar: true
 sidebar-about-description: "Code and Write blog"
 sidebar-avatar: /img/3.jpg 
+
+intensedebate_comments: true
