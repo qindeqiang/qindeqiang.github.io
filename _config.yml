@@ -6,10 +6,10 @@ email: deqiangqin@gmail.com
 copyright_name: Bigdata Resource
 description: "About bigdata resource,such as news,blogs,datas,codes,public project.Most of posts is my experience."
 baseurl: ""
-url: "http://bigdataresource.site"
+#url: "http://bigdataresource.site"
 
 #twitter_username: SBootstrap
-github_username:  qindeqiang1
+github_username:  qindeqiang
 #facebook_username:  StartBootstrap
 #weibo_username: qindeqiang
 # Google Analytics
@@ -31,3 +31,4 @@ sidebar-about-description: "Code and Write blog"
 sidebar-avatar: /img/3.jpg 
 
 intensedebate_comments: true
+
