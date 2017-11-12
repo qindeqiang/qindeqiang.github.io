@@ -1,7 +1,9 @@
 ---
 author: Deqiang Qin
 title: Ubuntu下离线安装CDH
+subtitle: Install CDH in Ubuntu System
 featimg: 4.jpg
+tags: [CDH安装,CDH]
 ---
 
 ## 裸机离线安装CDH

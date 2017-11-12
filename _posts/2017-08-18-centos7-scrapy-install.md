@@ -1,8 +1,9 @@
 ---
 author: Deqiang Qin
 title: CentOS7下Scrapy的安装流程
+subtitle: How to install scrapy in centos7
 featimg: 2.jpg
-category: [standard]
+tags: [CentOS,Scrapy]
 ---
 
 ### 写在前面
