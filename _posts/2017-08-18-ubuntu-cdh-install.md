@@ -53,7 +53,7 @@ sed -i "s/bind-address/#bind-address/g" /etc/mysql/my.cnf
 sudo service mysql restart
 ```
 
-#执行sql
+#### 执行sql
 
 ```sql
 --hive数据库
@@ -161,4 +161,10 @@ copyMySQL驱动到`/opt/cloudera/parcels/CDH-5.6.0-1.cdh5.6.0.p0.45/lib/hive/lib
 ```
 sudo cp /opt/cloudera/parcels/CDH-5.6.0-1.cdh5.6.0.p0.45/lib/hive/lib/mysql-connector-java-5.1.31.jar /var/lib/impala
 ```
+$$E=mc^2$$ is a inline formula
 
+$$ 
+\begin{aligned} \dot{x} &= \sigma(y-x) \\ 
+\dot{y} &= \rho x - y - xz \\ 
+\dot{z} &= -\beta z + xy \end{aligned} 
+$$

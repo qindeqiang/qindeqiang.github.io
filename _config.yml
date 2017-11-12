@@ -9,9 +9,9 @@ baseurl: ""
 url: "http://bigdataresource.site"
 
 #twitter_username: SBootstrap
-#github_username:  davidtmiller
+github_username:  qindeqiang1
 #facebook_username:  StartBootstrap
-weibo_username: qindeqiang
+#weibo_username: qindeqiang
 # Google Analytics
 # To enable google analytics, uncomment below line with a valid Google Tracking ID
 # google_tracking_id:
