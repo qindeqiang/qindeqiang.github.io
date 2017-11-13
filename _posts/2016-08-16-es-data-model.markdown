@@ -9,9 +9,9 @@ tags: Elasticsearch
 在使用ES之前需要弄清楚ES的数据存储模型，简单说数据到底是如何在ES保存的，按照一个什么样的模型架构保存的。
 <div>如下图是我绘制的一个架构图，并就图中的关键术语进行解释:</div>
 <br>    
-<div align="center">
+
 ![](/img/post-es-data-model.jpg "Elasticsearch Data Model")
-</div>
+
 ## Cluster-集群
 
 1、ES的集群不依赖zookeeper。集群搭建起来非常容易。如果需要提高ES集群的效率，需要单独的优化。<br>
