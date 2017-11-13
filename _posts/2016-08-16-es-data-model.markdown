@@ -10,7 +10,7 @@ tags: Elasticsearch
 <div>如下图是我绘制的一个架构图，并就图中的关键术语进行解释:</div>
 <br>    
 <div align="center">
-![](img/post-es-data-model.jpg)
+![](/img/post-es-data-model.jpg "Elasticsearch Data Model")
 </div>
 ## Cluster-集群
 
