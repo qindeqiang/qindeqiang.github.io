@@ -3,13 +3,12 @@ title: Elasticsearch的数据存储模型
 subtitle: The Model of Elasticsearch uses to save datas
 author: Deqiang Qin
 tags: Elasticsearch
+categories: Elasticsearch
 ---
 
 # Elasticsearch的数据存储模型
 在使用ES之前需要弄清楚ES的数据存储模型，简单说数据到底是如何在ES保存的，按照一个什么样的模型架构保存的。
 <div>如下图是我绘制的一个架构图，并就图中的关键术语进行解释:</div>
-<br>    
-
 ![](/img/post-es-data-model.jpg "Elasticsearch Data Model")
 
 ## Cluster-集群
