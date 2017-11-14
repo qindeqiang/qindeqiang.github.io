@@ -3,7 +3,8 @@ title: Elasticsearch的数据存储模型
 subtitle: The Model of Elasticsearch uses to save datas
 author: Deqiang Qin
 tags: Elasticsearch
-categories: Elasticsearch
+categories: [Elasticsearch,Bigdata]
+published: true
 ---
 
 # Elasticsearch的数据存储模型

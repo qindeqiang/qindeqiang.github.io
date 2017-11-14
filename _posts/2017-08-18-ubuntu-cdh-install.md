@@ -4,6 +4,8 @@ title: Ubuntu下离线安装CDH
 subtitle: Install CDH in Ubuntu System
 featimg: 4.jpg
 tags: [CDH安装,CDH]
+published: true
+categories: [CDH,Bigdata]
 ---
 
 ## 裸机离线安装CDH
@@ -165,8 +167,8 @@ sudo cp /opt/cloudera/parcels/CDH-5.6.0-1.cdh5.6.0.p0.45/lib/hive/lib/mysql-conn
 ```
 $$E=mc^2$$ is a inline formula
 
-$$ 
-\begin{aligned} \dot{x} &= \sigma(y-x) \\ 
-\dot{y} &= \rho x - y - xz \\ 
-\dot{z} &= -\beta z + xy \end{aligned} 
+$$
+\begin{aligned} \dot{x} &= \sigma(y-x) \\
+\dot{y} &= \rho x - y - xz \\
+\dot{z} &= -\beta z + xy \end{aligned}
 $$

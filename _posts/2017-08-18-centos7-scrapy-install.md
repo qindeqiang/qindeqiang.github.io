@@ -3,7 +3,9 @@ author: Deqiang Qin
 title: CentOS7下Scrapy的安装流程
 subtitle: How to install scrapy in centos7
 featimg: 2.jpg
-tags: [CentOS,Scrapy]
+published: true
+tags: [Scrapy,CentOS7]
+categories: [CDH,Linux]
 ---
 
 ### 关于
@@ -33,4 +35,3 @@ tags: [CentOS,Scrapy]
 #### 步骤五
 另外：中间有可能需要的安装组件如下：
 ```yum install -y python-devel openssl-devel libxslt-devel libxml2-devel ```
-

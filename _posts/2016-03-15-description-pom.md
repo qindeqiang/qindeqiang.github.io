@@ -2,7 +2,8 @@
 author: Deqiang Qin
 title:  POM文件详解
 featimg: pom.jpg
-published: false
+published: true
+categories: [Maven,Linux]
 ---
 
 
@@ -106,7 +107,7 @@ modules>
       <artifactId>spring-context-support</artifactId>
       <version>4.0.2.RELEASE</version>
   </dependency>
-  
+
     <!-- junit 依赖 -->
     <dependency>
     <groupId>junit</groupId>
@@ -137,7 +138,7 @@ modules>
         <groupId>org.springframework</groupId>
         <artifactId>spring-context-support</artifactId>
     </dependency>
-    
+
       <!-- junit 依赖 -->
       <dependency>
       <groupId>junit</groupId>
@@ -169,7 +170,7 @@ modules>
 ### Build 编译设置
 ```xml
 <build>…</build>  
-<reporting>…</reporting> 
+<reporting>…</reporting>
 ```
 build下主要有两种标签：Resources和Plugins。
 
@@ -189,7 +190,7 @@ resources 标签主要臃余排除或者包含某些资源文件，使用案例�
       <exclude>**/*.properties</exclude>  
     </excludes>  
   </resource>  
-</resources> 
+</resources>
 ```
 
 #### Plugins 项目构建插件
@@ -207,7 +208,7 @@ resources 标签主要臃余排除或者包含某些资源文件，使用案例�
        </configuration>  
        <dependencies>…</dependencies>  
        <executions>…</executions>  
-     </plugin> 
+     </plugin>
 </plugins>
 ```
 
@@ -235,7 +236,7 @@ maven-assembly-plugin要求用户使用一个名为assembly.xml的元数据文�
 
 ```
 
-+ maven-release-plugin 
++ maven-release-plugin
 
 + maven-compiler-plugin：主要用来编译源代码；
 
@@ -258,7 +259,7 @@ maven-assembly-plugin要求用户使用一个名为assembly.xml的元数据文�
   <repositories>…</repositories>  
   <pluginRepositories>…</pluginRepositories>  
   <distributionManagement>…</distributionManagement>  
-  <profiles>…</profiles> 
+  <profiles>…</profiles>
 ```
 ###### Plugin
 ``` xml

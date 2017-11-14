@@ -1,14 +1,75 @@
 ---
 layout: default
 title: "Big Data"
-description: "Who I am, What I do."
+description: "Posts are show by category"
 header-img: "img/about-bg.jpg"
 ---
-{% for category in site.categories %}
-<h2>{{ category | first }}</h2> </span>{{ category | last | size }}</span>
-<ul class="arc-list">
-{% for post in category.last %}
-<li>{{ post.date | date:"%d/%m/%Y"}} &nbsp;<a href="{{ post.url }}">{{ post.title }}</a></li>
-{% endfor %}
-</ul>
-{% endfor %}
+<!-- Page Header -->
+<header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="site-heading" id="tag-heading">
+                    <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+                    <span class="subheading">{{ page.description }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      {% for category in site.categories %}
+        <!-- 获取Elasticsearch方面的文章 -->
+        {% if category.first contains 'Elasticsearch' %}
+
+          <h2>{{ category | first }}</h2>
+
+            <ul class="arc-list">
+                {% for posts in category %}
+                      {% for post in posts %}
+                        <li>{{ post.date | date:"%d/%m/%Y"}} &nbsp;<a href="{{ post.url }}">{{ post.title }}</a></li>
+                      {% endfor %}
+                {% endfor %}
+            </ul>
+        {% endif %}
+
+        {% if category.first contains 'CDH' %}
+
+          <h2>{{ category | first }}</h2>
+
+            <ul class="arc-list">
+                {% for posts in category %}
+                      {% for post in posts %}
+                        <li>{{ post.date | date:"%d/%m/%Y"}} &nbsp;<a href="{{ post.url }}">{{ post.title }}</a></li>
+                      {% endfor %}
+                {% endfor %}
+            </ul>
+        {% endif %}
+
+
+        {% if category.first contains 'Hbase' %}
+
+          <h2>{{ category | first }}</h2>
+
+            <ul class="arc-list">
+                {% for posts in category %}
+                      {% for post in posts %}
+                        <li>{{ post.date | date:"%d/%m/%Y"}} &nbsp;<a href="{{ post.url }}">{{ post.title }}</a></li>
+                      {% endfor %}
+                {% endfor %}
+            </ul>
+        {% endif %}
+
+
+
+
+
+
+      {% endfor %}
+
+    </div>
+  </div>
+</div>
