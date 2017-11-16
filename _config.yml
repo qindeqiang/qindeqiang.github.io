@@ -9,6 +9,7 @@ baseurl: ""
 #url: "http://bigdataresource.site"
 
 #twitter_username: SBootstrap
+email_username: deqiangqin@gmail.com
 github_username:  qindeqiang
 #facebook_username:  StartBootstrap
 #weibo_username: qindeqiang
@@ -28,7 +29,6 @@ gems: [jekyll-paginate, jekyll-feed]
 # Sidebar settings
 sidebar: true
 sidebar-about-description: "Code and Write blog"
-sidebar-avatar: /img/3.jpg 
+sidebar-avatar: /img/3.jpg
 
 intensedebate_comments: true
-
