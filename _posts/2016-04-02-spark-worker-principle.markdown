@@ -23,11 +23,11 @@ Spark是根据shuffle类算子来进行stage的划分。如果我们的代码中
 如何设置持久化？
 
 #### Executor内存分块
-<div style="text-align:center" markdown="1">
-![](/img/post-spark-executor-model.png)
+<div align="center">
+<img src="/img/post-spark-executor-model.png" align="center" alt="">
 </div>
 Executor的内存主要分为三块，如上图所示：第一块是让task执行我们自己编写的代码时使用，默认是占Executor总内存的20%；第二块是让task通过shuffle过程拉取了上一个stage的task的输出后，进行聚合等操作时使用，默认也是占Executor总内存的20%；第三块是让RDD持久化时使用，默认占Executor总内存的60%。
-<font color='red'>放置一张图片</font><br>
+
 
 #### Task
 Task是在Executor中执行的，TaskSechuderManager将Task分配给Executor来执行，每一个Task的执行速度和当前的Executor的Core以及内存有关的。一个Core一次只能执行一个Task，如果当前的
