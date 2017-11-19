@@ -17,3 +17,25 @@ header-img: "img/Linux-bg-01.jpg"
         </div>
     </div>
 </header>
+
+<!-- 分类过滤 -->
+<div class="container">
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      {% for category in site.categories %}
+      <!-- Linux方向的文章 -->
+      {% if category.first contains 'Linux' %}
+        <h2>{{ category | first }}</h2>
+
+          <ul class="arc-list">
+              {% for posts in category %}
+                    {% for post in posts %}
+                      <li>{{ post.date | date:"%d/%m/%Y"}} &nbsp;<a href="{{ post.url }}">{{ post.title }}</a></li>
+                    {% endfor %}
+              {% endfor %}
+          </ul>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
