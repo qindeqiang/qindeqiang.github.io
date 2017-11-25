@@ -15,7 +15,7 @@ github_username:  qindeqiang
 #weibo_username: qindeqiang
 # Google Analytics
 # To enable google analytics, uncomment below line with a valid Google Tracking ID
-# google_tracking_id:
+google_tracking_id: UA-110178637-1
 
 # Build settings
 markdown: kramdown

@@ -31,15 +31,23 @@ hbase> count ‘t1′, INTERVAL => 10, CACHE => 1000
 ```
 
 #### 1.3、清空HBase表中的内容
-`truncate 'en_datas'`<p>该方法的执行流程是先disable该表，然后删除数据，指令和mysql的相同</p>
+`truncate 'en_datas'`
+<p>该方法的执行流程是先disable该表，然后删除数据，指令和mysql的相同</p>
 
 #### 1.4、描述表
+`desc 'tablename'`
 
 
 ### 2、操作表中的内容
 查询表中的数据,还是以'en_datas'这张表为例：<br>
 ####    2.1、浏览表的全部的数据<br>
 ```scan 'en_datas'```<br>
+##### 2.1.1、浏览表的指定条数
+```
+查询前10条数据
+scan 'en_datas',{'LIMIT'=> 10}
+```
+
 该方法不是很好，因为在HBase Shell中，它会在控制台上将每一个rowkey下的每一个列族的每一列都是按照一行显示的；对用户来说，当表的数据少的时候还可以看，如果表的数据比较多的时候，就头疼了。
 #### 2.2、按照rowkey查询
 
@@ -60,4 +68,5 @@ COLUMN                                     CELL
 ```
 
 参考文章：
-http://debugo.com/hbase-shell-cmds/
+http://debugo.com/hbase-shell-cmds/ <br>
+http://blog.csdn.net/andie_guo/article/details/44086389
