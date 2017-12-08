@@ -8,6 +8,16 @@ published: true
 categories: [Phoenix]
 header-img: "img/post-bg-05.jpg"
 ---
+Apache Phoenix 的安装主要分为以下步骤：<br>
+> 原来Phoenix还有一个翻译就是不死鸟。
+## 驱动拷贝
+将对应版本的jar包拷贝到HBase的lib目录下面；
+## 启动HBase
+
+## 运行Phoenix
+```
+[bigdata@localhost bin]$ ./sqlline.py localhost
+```
 启动的时候报如下异常信息：<br>
 ```
 [bigdata@localhost bin]$ ./sqlline.py localhost
