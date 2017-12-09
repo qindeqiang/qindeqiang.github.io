@@ -8,8 +8,21 @@ published: true
 categories: [Phoenix]
 header-img: "img/post-bg-05.jpg"
 ---
-Apache Phoenix 的安装主要分为以下步骤：<br>
-> 原来Phoenix还有一个翻译就是不死鸟。
+# Apache Phoenix 简介
+Apache Phoenix 是由Salesforce.com开源，是用在ApacheHbase上的一个SQL中间件，目的是为了让开发者能够在HBase上执行SQL查询。
+<br>
+
+如下图所示使用Phoenix的公司，还是有很多的。这在Phoenix的官网上也能查到。<br>
+
+<div>
+<img src="/img/phoenix/post-phoenix-company.png" align="center">
+</div>
+
+
+
+# Apache Phoenix 的安装步骤：<br>
+> 原来Phoenix还有一个翻译就是不死鸟。也是最近看美剧《电脑狂人(Halt and Catch Fire)》中给出的翻译.<br>
+
 ## 驱动拷贝
 将对应版本的jar包拷贝到HBase的lib目录下面；
 ## 启动HBase
@@ -169,6 +182,7 @@ Caused by: org.apache.hadoop.hbase.TableNotFoundException: SYSTEM.CATALOG
 	at org.apache.phoenix.query.ConnectionQueryServicesImpl.metaDataCoprocessorExec(ConnectionQueryServicesImpl.java:1276)
 	... 25 more
 ```
+以上的错误的原因主要是HBase的安装出现了问题，具体的可以查看我的HBase的单机版的安装方法那篇文章。<br>
 
 其中Hbase下也有可以直接访问zk的客户端：<br>
 `hbase zkcli`
