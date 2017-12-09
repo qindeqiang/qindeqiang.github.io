@@ -31,7 +31,7 @@ gems: [jekyll-paginate, jekyll-feed]
 
 # Sidebar settings
 sidebar: true
-sidebar-about-description: "Code and Write blog"
-sidebar-avatar: /img/3.jpg
+sidebar-about-description: "Hello,EveryOne"
+sidebar-avatar: /img/7.jpg
 
 intensedebate_comments: true

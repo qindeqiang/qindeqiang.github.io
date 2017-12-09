@@ -8,7 +8,7 @@ published: true
 categories: [Linux]
 header-img: "img/post-bg-05.jpg"
 ---
-* TOC
+* 目录
 {:toc}
 
 <div align="center">
