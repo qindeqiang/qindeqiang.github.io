@@ -19,6 +19,9 @@ google_tracking_id: UA-110178637-1
 
 # Build settings
 markdown: kramdown
+kramdown:
+  input:  GFM
+  use_coderay: true
 highlighter: rouge
 permalink: pretty
 paginate: 5
