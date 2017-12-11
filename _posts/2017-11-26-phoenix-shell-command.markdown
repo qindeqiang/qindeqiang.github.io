@@ -55,6 +55,11 @@ sqlline version 1.2.0
 ```
 
 ### 3.创建表
+使用sql创建表的时候一定要指定PRIMARY KEY。在phoenix中创建表后，表的列族名称为0。<br>
+另外，如果想要对HBase的表启用压缩，可以在表创建后，在HBase Shell中对表进行修改。如：
+```
+alter 'user_temp',{NAME =>'0',COMPRESSION => 'SNAPPY'}
+```
 ```
 0: jdbc:phoenix:192.168.122.1> CREATE TABLE user_temp (id varchar PRIMARY KEY,account varchar ,passwd varchar);
 No rows affected (1.542 seconds)
@@ -131,4 +136,53 @@ SELECT HOST, SUM(ACTIVE_VISITOR) TOTAL_ACTIVE_VISITORS
 FROM WEB_STAT
 WHERE DB > (CORE * 10)
 GROUP BY HOST;
+```
+常规查询：
+```
+0: jdbc:phoenix:192.168.122.1:2181> select * from WEB_STAT
+. . . . . . . . . . . . . . . . . > ;
++-------+-----------------+------------+--------------------------+-------+-------+-----------------+
+| HOST  |     DOMAIN      |  FEATURE   |           DATE           | CORE  |  DB   | ACTIVE_VISITOR  |
++-------+-----------------+------------+--------------------------+-------+-------+-----------------+
+| EU    | Apple.com       | Mac        | 2013-01-01 01:01:01.000  | 35    | 22    | 34              |
+| EU    | Apple.com       | Store      | 2013-01-03 01:01:01.000  | 345   | 722   | 170             |
+| EU    | Google.com      | Analytics  | 2013-01-13 08:06:01.000  | 25    | 2     | 6               |
+| EU    | Google.com      | Search     | 2013-01-09 01:01:01.000  | 395   | 922   | 190             |
+| EU    | Salesforce.com  | Dashboard  | 2013-01-06 05:04:05.000  | 12    | 22    | 43              |
+| EU    | Salesforce.com  | Login      | 2013-01-12 01:01:01.000  | 5     | 62    | 150             |
+| EU    | Salesforce.com  | Reports    | 2013-01-02 12:02:01.000  | 25    | 11    | 2               |
+| EU    | Salesforce.com  | Reports    | 2013-01-02 14:32:01.000  | 125   | 131   | 42              |
+| EU    | Salesforce.com  | Reports    | 2013-01-05 03:11:12.000  | 75    | 22    | 3               |
+| EU    | Salesforce.com  | Reports    | 2013-01-05 04:14:12.000  | 475   | 252   | 53              |
+| EU    | Salesforce.com  | Reports    | 2013-01-13 08:04:04.000  | 355   | 52    | 5               |
+| NA    | Apple.com       | Login      | 2013-01-01 01:01:01.000  | 35    | 22    | 40              |
+| NA    | Apple.com       | Login      | 2013-01-04 01:01:01.000  | 135   | 2     | 110             |
+| NA    | Apple.com       | Mac        | 2013-01-02 04:01:01.000  | 345   | 255   | 155             |
+| NA    | Apple.com       | Mac        | 2013-01-08 01:01:01.000  | 3     | 2     | 10              |
+| NA    | Apple.com       | iPad       | 2013-01-05 01:01:01.000  | 85    | 2     | 18              |
+| NA    | Apple.com       | iPad       | 2013-01-06 01:01:01.000  | 35    | 22    | 10              |
+| NA    | Apple.com       | iPad       | 2013-01-07 01:01:01.000  | 9     | 27    | 7               |
+| NA    | Google.com      | Analytics  | 2013-01-07 06:01:01.000  | 23    | 1     | 57              |
+| NA    | Google.com      | Analytics  | 2013-01-11 01:02:01.000  | 7     | 2     | 7               |
+| NA    | Google.com      | Analytics  | 2013-01-14 01:01:01.000  | 65    | 252   | 56              |
+| NA    | Google.com      | Search     | 2013-01-08 08:01:01.000  | 345   | 242   | 46              |
+| NA    | Google.com      | Search     | 2013-01-10 01:05:01.000  | 835   | 282   | 80              |
+| NA    | Google.com      | Search     | 2013-01-12 01:01:01.000  | 8     | 7     | 6               |
+| NA    | Salesforce.com  | Dashboard  | 2013-01-03 11:01:01.000  | 88    | 66    | 44              |
+| NA    | Salesforce.com  | Dashboard  | 2013-01-11 01:01:01.000  | 335   | 32    | 30              |
+| NA    | Salesforce.com  | Dashboard  | 2013-01-14 04:07:01.000  | 5     | 2     | 9               |
+| NA    | Salesforce.com  | Login      | 2013-01-01 01:01:01.000  | 35    | 42    | 10              |
+| NA    | Salesforce.com  | Login      | 2013-01-04 06:01:21.000  | 3     | 52    | 1               |
+| NA    | Salesforce.com  | Login      | 2013-01-04 11:01:11.000  | 23    | 56    | 45              |
+| NA    | Salesforce.com  | Login      | 2013-01-08 14:11:01.000  | 345   | 242   | 10              |
+| NA    | Salesforce.com  | Login      | 2013-01-10 01:01:01.000  | 345   | 252   | 150             |
+| NA    | Salesforce.com  | Login      | 2013-01-16 01:01:01.000  | 785   | 782   | 80              |
+| NA    | Salesforce.com  | Login      | 2013-01-17 01:01:01.000  | 355   | 242   | 33              |
+| NA    | Salesforce.com  | Login      | 2013-01-17 02:20:01.000  | 1235  | 2422  | 243             |
+| NA    | Salesforce.com  | Reports    | 2013-01-09 16:33:01.000  | 35    | 42    | 15              |
+| NA    | Salesforce.com  | Reports    | 2013-01-09 17:36:01.000  | 355   | 432   | 315             |
+| NA    | Salesforce.com  | Reports    | 2013-01-15 04:09:01.000  | 65    | 26    | 6               |
+| NA    | Salesforce.com  | Reports    | 2013-01-15 07:09:01.000  | 655   | 426   | 46              |
++-------+-----------------+------------+--------------------------+-------+-------+-----------------+
+
 ```
