@@ -11,6 +11,7 @@ header-img: "img/post-bg-05.jpg"
 # Apache Phoenix 简介
 Apache Phoenix 是由Salesforce.com开源，是用在ApacheHbase上的一个SQL中间件，目的是为了让开发者能够在HBase上执行SQL查询。
 <br>
+Phoenix之后的版本支持Cloudera和MapR的商业发行版。
 
 如下图所示使用Phoenix的公司，还是有很多的。这在Phoenix的官网上也能查到。<br>
 
